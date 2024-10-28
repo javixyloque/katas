@@ -2,7 +2,7 @@
 
 /**
  * @abstract Function that given a string, replace every letter with its position in the alphabet.
- * @param {*} text 
+ * @param {string} text 
  * @returns A string with all the positions of the characters
  */
 
