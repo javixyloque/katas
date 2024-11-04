@@ -48,3 +48,24 @@ function duplicateEncode(word){
 }
 
 // console.log(duplicateEncode("amaya"));
+
+/**
+ * @abstract Function that counts every letter in a phrase
+ * @param {*} string 
+ * @returns An object with all the characters (key) and their appearances (value)
+ */
+
+function count(string) {
+    object = {};
+    if (string != '' && string != null && string != 0) {
+        for (let i = 0; i < string.length; i++) {
+            object[`${string[i]}`] = string.split(string[i]).length - 1; // Devuelve la longitud del array que hace buscando el caracter de esa posicion del string
+        }
+    } else {
+        return object;
+    }
+    return object;
+}
+
+console.log(count());
+console.log(count("jesusmiguel anbdres"))
