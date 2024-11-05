@@ -14,3 +14,19 @@ function squareDigits (num) {
     return parseInt(newStr);
 }
 // console.log(squareDigits(34));
+
+
+
+
+
+function isTriangle(a, b, c) {
+    let arr = [a, b, c];
+    if (a+b > c && a+c > b && b+c > a) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+// console.log(isTriangle(1, 2, 2))
+// console.log(isTriangle(1, 2, 3))

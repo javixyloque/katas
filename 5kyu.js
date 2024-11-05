@@ -55,4 +55,4 @@ function scramble (str1, str2) {
     return false;
 }
 
-console.log(scramble("querty", "yety"));
+// console.log(scramble("querty", "yety"));

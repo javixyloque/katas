@@ -67,5 +67,50 @@ function count(string) {
     return object;
 }
 
-console.log(count());
-console.log(count("jesusmiguel anbdres"))
+// console.log(count());
+// console.log(count("jesusmiguel anbdres"))
+
+
+
+
+
+/**
+ * @abstract A function that given customers (& time they waste to check out) and number of checkout tills
+ * @param {*} customers an array of positive integers representing the queue, the number
+ * represents the time they require to check out
+ * @param {*} n number of checkout tills (cajas registradoras)
+ */
+
+
+
+function queueTime (customers, n) {
+    // let sum = 0;
+    // if (n === 1) {
+    //     customers.forEach(element => {
+    //         sum+=element;
+    //     });
+    //     return sum/n;
+    // } else {
+    //     if (n >= customers.length) {
+    //         sum = Math.max(...customers);
+    //         return sum;
+    //     } else {
+    //         customers.forEach (element => {
+    //             element > n ? sum += element : sum-=element;
+    //         })
+    //         return sum;
+    //     }
+    // }
+
+    long = 0;
+
+    customers.forEach(element => {
+        long+=element;
+    });
+    arr = new Array(long);
+    arr.fill("*");
+}
+
+console.log(queueTime([5,3,4], 1))
+console.log(queueTime([10,2,3,3], 2));
+console.log(queueTime([2,3,10,2], 2))
