@@ -111,6 +111,33 @@ function queueTime (customers, n) {
     arr.fill("*");
 }
 
-console.log(queueTime([5,3,4], 1))
-console.log(queueTime([10,2,3,3], 2));
-console.log(queueTime([2,3,10,2], 2))
+// console.log(queueTime([5,3,4], 1))
+// console.log(queueTime([10,2,3,3], 2));
+// console.log(queueTime([2,3,10,2], 2))
+
+
+
+
+/**
+ * @abstract function that given a number, returns as a string in expanded form
+ * @param {Integer} num A number given by the user
+ * @returns {String} The sum with zeros that composes that integer
+ */
+
+function expandedForm(num) {
+    let arrNums = num.toString().split('');
+    let zeros;
+    let strFin = "";
+    for (let i = 0; i < arrNums.length; i++) {
+        zeros = "0".repeat(arrNums.length- i -1);
+        if (arrNums[i] > 0) {
+            strFin+= `${arrNums[i]+zeros} + `;
+        }
+        
+    }
+    return strFin.slice(0 , -3);
+}
+
+// console.log(expandedForm(156));
+// expandedForm(1060)
+
