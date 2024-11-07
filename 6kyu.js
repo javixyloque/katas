@@ -187,7 +187,11 @@ function romanNumbers (number) {
 
 
 
-
+/**
+ * @abstract A function that given an array of numbers, return the distinct number on it
+ * @param {Array} numbers 
+ * @returns {Integer} The different one among the array
+ */
 
 function stray (numbers) {
     
