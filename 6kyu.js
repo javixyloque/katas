@@ -141,3 +141,70 @@ function expandedForm(num) {
 // console.log(expandedForm(156));
 // expandedForm(1060)
 
+
+
+/**
+ * @abstract A function that given a number, returns the sum of all multiples of 3 or 5 below the number passed
+ * @param {Integer} number 
+ * @returns {Integer} sum of multiples of 3 and 5 below the number
+ */
+
+
+function multipleSum(number) {
+    let sum = 0;
+    for (let i = 1; i < number; i++) {
+        if (i % 3 === 0) {
+            sum+=i;
+        } else if (i % 5 ===0 && i % 3 !=0) {
+            sum+=i;
+        }
+    }
+    return sum;
+    
+}
+
+// console.log(multipleSum(10));
+
+
+
+
+
+// https://www.codewars.com/kata/51b62bf6a9c58071c600001b/train/javascript
+
+function romanNumbers (number) {
+    let numeroArr = number.toString().split('');
+    let contador = 0;
+    let numRomano = "";
+    for (let i = numeroArr.length - 1 ; i < numeroArr.length; i--) {
+        switch (numeroArr[i]) {
+            case 1:
+        }
+    }
+}
+
+
+
+
+
+
+
+
+function stray (numbers) {
+    
+    if (numbers[0] != numbers[1]) {
+        if (numbers[0] == numbers[2]) {
+            return numbers[1];
+        } else {
+            return numbers[0];
+        }
+    } else {
+        let comparador = numbers[0];
+
+        let newArr = numbers.filter((num) => num != comparador);
+        return newArr[0];
+    }
+    
+    
+}
+
+console.log(stray([3,1,1]));
